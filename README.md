@@ -1,5 +1,6 @@
 # mkv-split-chapters
-This is a simple tool that extracts all chapters from an mkv and saves them in separate files.
+
+This is a simple tool that takes one mkv file with several chapters and extracts each chapter into a mkv file.
 
 ## Installation
 
