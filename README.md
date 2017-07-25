@@ -6,7 +6,6 @@ This is a simple tool that takes one mkv file with several chapters in it and ex
 
 ```
 $ git clone https://github.com/dpsenner/mkv-split-chapters.git
-$ cd mkv-split-chapters
 $ sudo ln -s $(readlink -f mkv-split-chapters/mkv-split-chapters.sh) /usr/local/bin/mkv-split-chapters
 ```
 
