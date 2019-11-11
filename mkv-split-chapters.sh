@@ -20,7 +20,7 @@ ffmpeg -i $file 2>&1 | grep 'Chapter' | grep 'start' | grep ', end' | awk "{
         # remove everything but 0-9.
         gsub(/[^0123456789\.]/, \"\", start)
         end=\$6
-        command=sprintf(\"ffmpeg -i $file -ss %s -to %s -acodec copy -vcodec copy $filedir/$filename-%s.$fileextension\n\", start, end, chapter)
+        command=sprintf(\"ffmpeg -i $file -ss %s -to %s -c copy -map 0 $filedir/$filename-%s.$fileextension\n\", start, end, chapter)
         print(command)
         system(command)
 }"
